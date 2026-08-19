@@ -13,7 +13,11 @@
 nav{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(8,11,18,.88);backdrop-filter:blur(12px);border-bottom:1px solid #1d2633}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:21px}.logo b{color:#00d4ff}.links{display:flex;gap:20px;list-style:none}.links a{color:#aeb7c5;font-size:14px}.links a:hover{color:#00d4ff}
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:70px}.hero-inner{max-width:850px}.eyebrow{display:inline-block;border:1px solid #263243;background:#0d131d;color:#00d4ff;border-radius:999px;padding:7px 13px;font-size:13px;margin-bottom:22px}h1{font-size:clamp(44px,8vw,80px);line-height:1.04;margin-bottom:20px}h1 span{color:#00d4ff}.lead{font-size:19px;color:#9da6b5;max-width:760px;margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 19px;border-radius:8px;border:1px solid #2a3443;display:inline-block}.primary{background:#00d4ff;color:#061018;border-color:#00d4ff;font-weight:700}.btn:hover{border-color:#00d4ff;color:#00d4ff}.primary:hover{color:#061018;transform:translateY(-2px)}
 section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter-spacing:2px;font-size:12px;text-transform:uppercase}h2{font-size:38px;margin:7px 0}.section-desc{color:#8993a3;margin-bottom:35px}.grid{display:grid;gap:18px}.about{grid-template-columns:1fr 1fr}.box,.card{background:#0d121b;border:1px solid #1b2634;border-radius:13px;padding:24px}.muted{color:#aab3c0}.info{display:grid;gap:14px}.info div{padding:15px;border:1px solid #1b2634;border-radius:10px;background:#0b1018}.info strong{display:block;color:#00d4ff}
-.skills{grid-template-columns:repeat(3,1fr)}.card{transition:.25s}.card:hover{transform:translateY(-4px);border-color:#00d4ff}.card h3{margin:7px 0 6px;font-size:18px}.card p{color:#8f99a8;font-size:14px}.projects{grid-template-columns:repeat(2,1fr)}.num{font-size:12px;color:#00d4ff;letter-spacing:1px;margin-bottom:10px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.pill,.tag{display:inline-block;border-radius:999px;background:#151e2a;color:#aeb8c6;padding:4px 9px;font-size:11px}.certs{grid-template-columns:repeat(3,1fr)}.cert{position:relative;padding-top:27px}.cert .pill{position:absolute;right:18px;top:18px;color:#00d4ff}.issuer{margin-bottom:17px!important;color:#c1c8d3!important}.view{display:inline-block;margin-top:7px;color:#00d4ff;font-size:13px;border-bottom:1px solid #21465a;padding-bottom:2px}
+.skills{grid-template-columns:repeat(3,1fr)}.card{transition:.25s}.card:hover{transform:translateY(-4px);border-color:#00d4ff}.card h3{margin:7px 0 6px;font-size:18px}.card p{color:#8f99a8;font-size:14px}.projects{grid-template-columns:repeat(2,1fr)}.num{font-size:12px;color:#00d4ff;letter-spacing:1px;margin-bottom:10px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.pill,.tag{display:inline-block;border-radius:999px;background:#151e2a;color:#aeb8c6;padding:4px 9px;font-size:11px}.certs{grid-template-columns:repeat(3,1fr)}.cert{position:relative;padding-top:27px}.cert .pill{position:absolute;right:18px;top:18px;color:#00d4ff}.issuer{margin-bottom:17px!important;color:#c1c8d3!important}
+.cert-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.download{display:inline-block;color:#c5ceda;font-size:13px;border-bottom:1px solid #344252;padding-bottom:2px}
+.download:hover{color:#00d4ff;border-color:#00d4ff}
+.view{display:inline-block;margin-top:0;color:#00d4ff;font-size:13px;border-bottom:1px solid #21465a;padding-bottom:2px}
 .timeline{border-left:2px solid #1d2b3a;padding-left:24px}.timeline-item{position:relative;margin-bottom:30px}.timeline-item:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#00d4ff;left:-30px;top:8px}.timeline-item small{color:#00d4ff}.timeline-item h3{margin:4px 0}.timeline-item p{color:#929baa}
 .contact{text-align:center;padding:48px 20px}footer{padding:28px 0;text-align:center;border-top:1px solid #161e29;color:#687384;font-size:13px}
 @media(max-width:780px){.links{display:none}.about,.skills,.projects,.certs{grid-template-columns:1fr}section{padding:75px 0}h2{font-size:32px}}
@@ -47,8 +51,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
 <div class="grid projects">
 <div class="card"><div class="num">PROJECT 01</div><h3>MikroTik Network Lab</h3><p>Project pembelajaran jaringan menggunakan MikroTik dengan konfigurasi DHCP, Firewall, NAT, Routing dan VPN.</p><div class="tags"><span class="tag">MikroTik</span><span class="tag">Networking</span><span class="tag">Firewall</span></div></div>
 <div class="card"><div class="num">PROJECT 02</div><h3>Proxmox Server Lab</h3><p>Lab virtualisasi menggunakan Proxmox VE untuk menjalankan berbagai virtual machine Linux dan server.</p><div class="tags"><span class="tag">Proxmox</span><span class="tag">Linux</span><span class="tag">Virtualization</span></div></div>
-<div class="card"><div class="num">PROJECT 03</div><h3>NyamYuk</h3><p>Project brand makanan dan pengembangan sistem digital untuk mendukung operasional serta penjualan.</p><div class="tags"><span class="tag">Business</span><span class="tag">Web</span><span class="tag">Application</span></div></div>
-<div class="card"><div class="num">PROJECT 04</div><h3>IT Support Lab</h3><p>Dokumentasi troubleshooting komputer, instalasi sistem operasi, printer, jaringan LAN dan maintenance.</p><div class="tags"><span class="tag">IT Support</span><span class="tag">Hardware</span><span class="tag">Troubleshooting</span></div></div>
+<div class="card"><div class="num">PROJECT 03</div><h3>IT Support Lab</h3><p>Dokumentasi troubleshooting komputer, instalasi sistem operasi, printer, jaringan LAN dan maintenance.</p><div class="tags"><span class="tag">IT Support</span><span class="tag">Hardware</span><span class="tag">Troubleshooting</span></div></div>
 </div></div></section>
 
 <section id="certifications"><div class="container"><span class="kicker">04 — Certifications & Training</span><h2>13 Certifications & Training</h2><p class="section-desc">Klik <b>View Certificate</b> untuk membuka dokumen sertifikat asli.</p>
@@ -58,7 +61,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">AI</span>
       <h3>AI Basics: Overview of AI</h3>
       <p class="issuer">Huawei Talent Online</p>
-      <a class="view" href="certificates/AI Basics - Overview of AI (Huawei).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/AI Basics - Overview of AI (Huawei).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/AI Basics - Overview of AI (Huawei).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -66,7 +69,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cloud</span>
       <h3>Fundamentals of Cloud Computing</h3>
       <p class="issuer">Udemy</p>
-      <a class="view" href="certificates/Fundamentals of Cloud Computing (Udemy).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Fundamentals of Cloud Computing (Udemy).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Fundamentals of Cloud Computing (Udemy).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -74,7 +77,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cybersecurity</span>
       <h3>Introduction to the Threat Landscape 3.0</h3>
       <p class="issuer">Fortinet Training Institute</p>
-      <a class="view" href="certificates/Introduction to the Threat Landscape 3.0 (Fortinet).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Introduction to the Threat Landscape 3.0 (Fortinet).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Introduction to the Threat Landscape 3.0 (Fortinet).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -82,7 +85,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cybersecurity</span>
       <h3>Introduction to Information Security</h3>
       <p class="issuer">Cyber Academy</p>
-      <a class="view" href="certificates/Introduction to Information Security.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Introduction to Information Security.pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Introduction to Information Security.pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -90,7 +93,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">IT</span>
       <h3>Computer Basics</h3>
       <p class="issuer">GCFGlobal</p>
-      <a class="view" href="certificates/Computer Basics (GCFGlobal).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Computer Basics (GCFGlobal).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Computer Basics (GCFGlobal).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -98,7 +101,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Infrastructure</span>
       <h3>Prometheus MasterClass: Infrastructure Monitoring &amp; Alerting</h3>
       <p class="issuer">Udemy</p>
-      <a class="view" href="certificates/Prometheus MasterClass - Infrastructure Monitoring &amp; Alerting.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Prometheus MasterClass - Infrastructure Monitoring &amp; Alerting.pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Prometheus MasterClass - Infrastructure Monitoring &amp; Alerting.pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -106,7 +109,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Networking</span>
       <h3>Jaringan Komputer Dasar</h3>
       <p class="issuer">ID-Networkers</p>
-      <a class="view" href="certificates/Jaringan Komputer Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Jaringan Komputer Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Jaringan Komputer Dasar (ID-Networkers).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -114,7 +117,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cybersecurity</span>
       <h3>Cyber Security Dasar</h3>
       <p class="issuer">ID-Networkers</p>
-      <a class="view" href="certificates/Cyber Security Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Cyber Security Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Cyber Security Dasar (ID-Networkers).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -122,7 +125,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Networking</span>
       <h3>Cisco Dasar</h3>
       <p class="issuer">ID-Networkers</p>
-      <a class="view" href="certificates/Cisco Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Cisco Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Cisco Dasar (ID-Networkers).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -130,7 +133,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Networking</span>
       <h3>MikroTik Dasar</h3>
       <p class="issuer">ID-Networkers</p>
-      <a class="view" href="certificates/MikroTik Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/MikroTik Dasar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/MikroTik Dasar (ID-Networkers).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -138,7 +141,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cybersecurity</span>
       <h3>The Ultimate ISC2 Certified in Cybersecurity (CC) Course 2025</h3>
       <p class="issuer">Udemy</p>
-      <a class="view" href="certificates/ISC2 CC Course 2025 (Udemy).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/ISC2 CC Course 2025 (Udemy).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/ISC2 CC Course 2025 (Udemy).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -146,7 +149,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Networking</span>
       <h3>Penggunaan MikroTik untuk Jaringan SOHO</h3>
       <p class="issuer">ID-Networkers</p>
-      <a class="view" href="certificates/MikroTik SOHO Webinar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/MikroTik SOHO Webinar (ID-Networkers).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/MikroTik SOHO Webinar (ID-Networkers).pdf" download>Download ↓</a></div>
     </article>
     
     <article class="card cert">
@@ -154,7 +157,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
       <span class="pill">Cybersecurity</span>
       <h3>Learning from Major Cyber Security Incidents</h3>
       <p class="issuer">OpenLearn — The Open University</p>
-      <a class="view" href="certificates/Learning from Major Cyber Security Incidents (OpenLearn).pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+      <div class="cert-actions"><a class="view" href="certificates/Learning from Major Cyber Security Incidents (OpenLearn).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a class="download" href="certificates/Learning from Major Cyber Security Incidents (OpenLearn).pdf" download>Download ↓</a></div>
     </article>
     </div></div></section>
 
@@ -162,7 +165,7 @@ section{padding:95px 0;border-top:1px solid #161e29}.kicker{color:#00d4ff;letter
 <div class="timeline"><div class="timeline-item"><small>IT SUPPORT</small><h3>DPRD Jawa Barat</h3><p class="muted">Melakukan maintenance komputer, instalasi Windows, troubleshooting printer, konfigurasi LAN, CCTV dan perangkat jaringan.</p></div>
 <div class="timeline-item"><small>EDUCATION</small><h3>SMK Handayani Banjaran</h3><p class="muted">Teknik Komputer dan Jaringan. Mempelajari dasar komputer, jaringan, server dan troubleshooting.</p></div></div></div></section>
 
-<section id="contact"><div class="container"><div class="box contact"><span class="kicker">06 — Contact</span><h2>Let's Connect</h2><p class="section-desc">Tertarik bekerja sama atau ingin melihat project saya?</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://github.com/AllexxaID" target="_blank" rel="noopener">GitHub Profile</a><a class="btn" href="CV-Yahya-Fauzan-Sumpena-Putra.pdf" target="_blank" rel="noopener">Open CV</a></div></div></div></section>
+<section id="contact"><div class="container"><div class="box contact"><span class="kicker">06 — Contact</span><h2>Let's Connect</h2><p class="section-desc">Tertarik bekerja sama atau ingin melihat project saya?</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://github.com/AllexxaID" target="_blank" rel="noopener">GitHub Profile</a><a class="btn" href="CV-Yahya-Fauzan-Sumpena-Putra.pdf" target="_blank" rel="noopener">View CV ↗</a><a class="btn" href="CV-Yahya-Fauzan-Sumpena-Putra.pdf" download>Download CV ↓</a></div></div></div></section>
 
 <footer><div class="container">© 2026 AllexxaID — allexxa.my.id</div></footer>
 </body></html>
